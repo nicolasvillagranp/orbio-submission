@@ -1,0 +1,36 @@
+[project]
+name = "fde-demo"
+version = "0.1.0"
+description = "AI candidate screening for Grupo Sazón (Orbio FDE assignment)"
+requires-python = ">=3.10"
+dependencies = [
+    # screening pipeline
+    "anthropic",
+    "typesafe-sdk",
+    "langgraph",
+    "langgraph-checkpoint-sqlite",
+    "pydantic>=2",
+    "httpx",
+    "pyyaml",
+    "python-dotenv",
+    # voice agent: Deepgram speech-to-text, Cartesia text-to-speech, Silero voice activity
+    "livekit-agents[silero,deepgram,cartesia]~=1.8.9",
+    # telephony: rooms, SIP trunk and outbound calls through Zadarma
+    "livekit-api>=1.0.0",
+    "certifi",
+    # WhatsApp channel
+    "flask>=3.1",
+    "twilio>=9.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+# Run from the repo root (python -m voice.agent, python telephony/call_me.py):
+# installing the project only installs its dependencies.
+[tool.setuptools]
+packages = []
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

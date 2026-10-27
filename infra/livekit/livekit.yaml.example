@@ -1,0 +1,13 @@
+port: 7880
+rtc:
+  tcp_port: 7881
+  port_range_start: 51000
+  port_range_end: 51100
+  # En el Mac: el navegador y el servicio SIP llegan al audio por 127.0.0.1.
+  # En un VPS: borra node_ip y pon use_external_ip: true
+  node_ip: 127.0.0.1
+redis:
+  address: localhost:6379
+keys:
+  # Debe coincidir con LIVEKIT_API_KEY / LIVEKIT_API_SECRET del .env
+  devkey: CAMBIA_ESTE_SECRETO_DE_AL_MENOS_32_CARACTERES

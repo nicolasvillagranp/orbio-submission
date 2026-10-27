@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+infra/livekit/recordings/
+data/*.db
+data/*.db-*
+data/candidates.json
+*.egg-info/
+.env.BL-*
+infra/livekit/*.yaml

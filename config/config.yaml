@@ -1,0 +1,38 @@
+# Business settings for the screening pipeline.
+# Secrets (API keys, contact) live in .env, never here.
+
+llm:
+  chat_model: claude-haiku-5-5
+  chat_effort: low
+
+classifier:
+  # jev | claude: which model turns free-text answers into allowed values
+  provider: jev
+  jev_model: jev-latest
+  # Multi-select fields: options at or above this are clear picks; borderline ones (0.5..clear_pick)
+  # count only when nothing is clear
+  clear_pick: 0.65
+
+confidence_gate:
+  keep: 0.6      # >= keep: store the answer and move on (the final summary verifies it); below: ask again
+  knockout: 0.9  # a disqualifying answer below this is confirmed with the candidate before acting
+  max_attempts: 2  # failed attempts on one field before it's flagged for the recruiter
+
+service_area:
+  # Straight-line km from the candidate's place to the nearest restaurant
+  in_area_km: 15
+  review_km: 20    # in_area_km..review_km: recruiter decides; beyond: out of area
+
+screening:
+  max_start_days: 60  # start dates further out go to recruiter review
+
+voice:
+  # Seconds of silence before the candidate's turn counts as finished. The end-of-turn model
+  # picks min_delay when it's sure they're done and waits up to max_delay when it isn't.
+  # Screening answers are short and it's often unsure, so max_delay sets the usual pause.
+  # Lower is snappier but cuts off candidates who hesitate ("vivo en... eh... Getafe").
+  min_delay: 0.3
+  max_delay: 1.2  # LiveKit default: 2.5
+  ack_after: 0.5  # seconds without a reply before saying a short "Vale..." / "A ver..."
+  # Cartesia voice via LiveKit Inference. More voices: https://play.cartesia.ai/voices
+  tts_voice: 5c5ad5e7-1020-476b-8b91-fdcbe9cc313c  # Daniela: calm Mexican female (es-MX)

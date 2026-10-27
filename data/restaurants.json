@@ -1,0 +1,362 @@
+[
+ {
+  "id": "mad-sol",
+  "name": "Sol",
+  "city": "Madrid",
+  "country": "ES",
+  "lat": 40.4168,
+  "lon": -3.7038
+ },
+ {
+  "id": "mad-chamberi",
+  "name": "Chamberí",
+  "city": "Madrid",
+  "country": "ES",
+  "lat": 40.434,
+  "lon": -3.704
+ },
+ {
+  "id": "mad-salamanca",
+  "name": "Salamanca",
+  "city": "Madrid",
+  "country": "ES",
+  "lat": 40.43,
+  "lon": -3.68
+ },
+ {
+  "id": "mad-carabanchel",
+  "name": "Carabanchel",
+  "city": "Madrid",
+  "country": "ES",
+  "lat": 40.383,
+  "lon": -3.728
+ },
+ {
+  "id": "mad-getafe",
+  "name": "Getafe",
+  "city": "Madrid",
+  "country": "ES",
+  "lat": 40.3057,
+  "lon": -3.7327
+ },
+ {
+  "id": "bcn-eixample",
+  "name": "Eixample",
+  "city": "Barcelona",
+  "country": "ES",
+  "lat": 41.391,
+  "lon": 2.165
+ },
+ {
+  "id": "bcn-gracia",
+  "name": "Gràcia",
+  "city": "Barcelona",
+  "country": "ES",
+  "lat": 41.403,
+  "lon": 2.157
+ },
+ {
+  "id": "bcn-sants",
+  "name": "Sants",
+  "city": "Barcelona",
+  "country": "ES",
+  "lat": 41.375,
+  "lon": 2.135
+ },
+ {
+  "id": "bcn-hospitalet",
+  "name": "L'Hospitalet",
+  "city": "Barcelona",
+  "country": "ES",
+  "lat": 41.3596,
+  "lon": 2.0997
+ },
+ {
+  "id": "vlc-centro",
+  "name": "Centro",
+  "city": "Valencia",
+  "country": "ES",
+  "lat": 39.4699,
+  "lon": -0.3763
+ },
+ {
+  "id": "vlc-benimaclet",
+  "name": "Benimaclet",
+  "city": "Valencia",
+  "country": "ES",
+  "lat": 39.485,
+  "lon": -0.36
+ },
+ {
+  "id": "svq-centro",
+  "name": "Centro",
+  "city": "Sevilla",
+  "country": "ES",
+  "lat": 37.3891,
+  "lon": -5.9845
+ },
+ {
+  "id": "svq-nervion",
+  "name": "Nervión",
+  "city": "Sevilla",
+  "country": "ES",
+  "lat": 37.383,
+  "lon": -5.973
+ },
+ {
+  "id": "zaz-centro",
+  "name": "Centro",
+  "city": "Zaragoza",
+  "country": "ES",
+  "lat": 41.6488,
+  "lon": -0.8891
+ },
+ {
+  "id": "agp-centro",
+  "name": "Centro",
+  "city": "Málaga",
+  "country": "ES",
+  "lat": 36.7213,
+  "lon": -4.4214
+ },
+ {
+  "id": "agp-teatinos",
+  "name": "Teatinos",
+  "city": "Málaga",
+  "country": "ES",
+  "lat": 36.72,
+  "lon": -4.47
+ },
+ {
+  "id": "mjv-centro",
+  "name": "Centro",
+  "city": "Murcia",
+  "country": "ES",
+  "lat": 37.9922,
+  "lon": -1.1307
+ },
+ {
+  "id": "pmi-centro",
+  "name": "Centro",
+  "city": "Palma",
+  "country": "ES",
+  "lat": 39.5696,
+  "lon": 2.6502
+ },
+ {
+  "id": "lpa-centro",
+  "name": "Centro",
+  "city": "Las Palmas de Gran Canaria",
+  "country": "ES",
+  "lat": 28.1235,
+  "lon": -15.4363
+ },
+ {
+  "id": "bio-abando",
+  "name": "Abando",
+  "city": "Bilbao",
+  "country": "ES",
+  "lat": 43.263,
+  "lon": -2.935
+ },
+ {
+  "id": "cdmx-roma",
+  "name": "Roma",
+  "city": "Ciudad de México",
+  "country": "MX",
+  "lat": 19.415,
+  "lon": -99.162
+ },
+ {
+  "id": "cdmx-polanco",
+  "name": "Polanco",
+  "city": "Ciudad de México",
+  "country": "MX",
+  "lat": 19.433,
+  "lon": -99.195
+ },
+ {
+  "id": "cdmx-delvalle",
+  "name": "Del Valle",
+  "city": "Ciudad de México",
+  "country": "MX",
+  "lat": 19.385,
+  "lon": -99.165
+ },
+ {
+  "id": "cdmx-coyoacan",
+  "name": "Coyoacán",
+  "city": "Ciudad de México",
+  "country": "MX",
+  "lat": 19.35,
+  "lon": -99.162
+ },
+ {
+  "id": "cdmx-centro",
+  "name": "Centro Histórico",
+  "city": "Ciudad de México",
+  "country": "MX",
+  "lat": 19.4326,
+  "lon": -99.1332
+ },
+ {
+  "id": "cdmx-iztapalapa",
+  "name": "Iztapalapa",
+  "city": "Ciudad de México",
+  "country": "MX",
+  "lat": 19.355,
+  "lon": -99.06
+ },
+ {
+  "id": "cdmx-satelite",
+  "name": "Satélite",
+  "city": "Ciudad de México",
+  "country": "MX",
+  "lat": 19.51,
+  "lon": -99.235
+ },
+ {
+  "id": "mty-centro",
+  "name": "Centro",
+  "city": "Monterrey",
+  "country": "MX",
+  "lat": 25.6866,
+  "lon": -100.3161
+ },
+ {
+  "id": "mty-sanpedro",
+  "name": "San Pedro",
+  "city": "Monterrey",
+  "country": "MX",
+  "lat": 25.657,
+  "lon": -100.402
+ },
+ {
+  "id": "mty-apodaca",
+  "name": "Apodaca",
+  "city": "Monterrey",
+  "country": "MX",
+  "lat": 25.781,
+  "lon": -100.188
+ },
+ {
+  "id": "gdl-centro",
+  "name": "Centro",
+  "city": "Guadalajara",
+  "country": "MX",
+  "lat": 20.6767,
+  "lon": -103.3475
+ },
+ {
+  "id": "gdl-zapopan",
+  "name": "Zapopan",
+  "city": "Guadalajara",
+  "country": "MX",
+  "lat": 20.721,
+  "lon": -103.391
+ },
+ {
+  "id": "gdl-tlaquepaque",
+  "name": "Tlaquepaque",
+  "city": "Guadalajara",
+  "country": "MX",
+  "lat": 20.64,
+  "lon": -103.311
+ },
+ {
+  "id": "pue-centro",
+  "name": "Centro",
+  "city": "Puebla",
+  "country": "MX",
+  "lat": 19.0414,
+  "lon": -98.2063
+ },
+ {
+  "id": "pue-angelopolis",
+  "name": "Angelópolis",
+  "city": "Puebla",
+  "country": "MX",
+  "lat": 19.03,
+  "lon": -98.233
+ },
+ {
+  "id": "tlc-centro",
+  "name": "Centro",
+  "city": "Toluca",
+  "country": "MX",
+  "lat": 19.2826,
+  "lon": -99.6557
+ },
+ {
+  "id": "tij-zonario",
+  "name": "Zona Río",
+  "city": "Tijuana",
+  "country": "MX",
+  "lat": 32.528,
+  "lon": -117.02
+ },
+ {
+  "id": "tij-otay",
+  "name": "Otay",
+  "city": "Tijuana",
+  "country": "MX",
+  "lat": 32.53,
+  "lon": -116.96
+ },
+ {
+  "id": "bjx-centro",
+  "name": "Centro",
+  "city": "León",
+  "country": "MX",
+  "lat": 21.125,
+  "lon": -101.686
+ },
+ {
+  "id": "bjx-norte",
+  "name": "Norte",
+  "city": "León",
+  "country": "MX",
+  "lat": 21.16,
+  "lon": -101.695
+ },
+ {
+  "id": "qro-centro",
+  "name": "Centro",
+  "city": "Querétaro",
+  "country": "MX",
+  "lat": 20.5888,
+  "lon": -100.3899
+ },
+ {
+  "id": "qro-juriquilla",
+  "name": "Juriquilla",
+  "city": "Querétaro",
+  "country": "MX",
+  "lat": 20.7,
+  "lon": -100.45
+ },
+ {
+  "id": "cjs-centro",
+  "name": "Centro",
+  "city": "Ciudad Juárez",
+  "country": "MX",
+  "lat": 31.738,
+  "lon": -106.487
+ },
+ {
+  "id": "cjs-sur",
+  "name": "Sur",
+  "city": "Ciudad Juárez",
+  "country": "MX",
+  "lat": 31.66,
+  "lon": -106.4
+ },
+ {
+  "id": "trc-centro",
+  "name": "Centro",
+  "city": "Torreón",
+  "country": "MX",
+  "lat": 25.5428,
+  "lon": -103.4068
+ }
+]

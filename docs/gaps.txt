@@ -1,0 +1,61 @@
+KNOWN GAPS - Grupo Sazón candidate screening
+============================================
+
+Places where the code doesn't yet do what the design documents promise, or
+where an irreversible action could fire on a wrong reading. Ordered by risk.
+
+
+1. LOCATION KNOCKOUT SKIPS CONFIRMATION                        [high, open]
+---------------------------------------------------------------------------
+Promise:  process-design.md, section 3: a disqualifying answer below 0.9
+          confidence is confirmed before acting. technical-decisions.txt,
+          decision 12: only clear, high-confidence answers trigger a knockout.
+Reality:  This holds for the license, which Jev classifies and which goes
+          through gate() with its real confidence. It doesn't hold for the
+          location:
+            - Claude extracts the place (record_details, pipeline.py).
+            - check_area() geocodes it with Nominatim (geocoding.py).
+            - rules.apply() receives it with a fixed confidence of 1.0
+              (pipeline.py, record_details -> Classification(value, 1.0)).
+            - gate() only confirms knockouts below 0.9 (rules.py), so
+              confirmation never triggers.
+            - "out_of_area" disqualifies at once and ends the conversation.
+How it goes wrong:
+  - Claude picks the wrong place: "trabajé en Monterrey pero vivo en Puebla".
+  - Nominatim picks the wrong place: check_area() only reports "ambiguous"
+    when other matches are within 0.1 importance of the best one
+    (IMPORTANCE_MARGIN). A distant namesake that scores clearly higher, or a
+    single wrong result, is taken as correct.
+Tests:    test_rules.py::test_out_of_area_disqualifies asserts the current
+          behaviour (out_of_area at 1.0 -> disqualified), so it doesn't catch it.
+Today's safety net: the candidate can ask for a human review, and recruiters
+          see the disqualified list. The decision is still automatic and the
+          conversation is already over.
+Proposed fix: send "out_of_area" through confirmation first ("¿Vives en Getafe,
+          Madrid?") and disqualify only after a yes. Extend confirm_pending()
+          in rules.py with a "location" case, as it already does for the
+          license, and update the test.
+
+
+2. SIGNALS THAT CLOSE THE CONVERSATION                       [medium, open]
+---------------------------------------------------------------------------
+Where:    decide() in pipeline.py.
+Reality:  delete_data >= 0.8 closes the screening at once (status declined).
+          A second abusive message >= 0.8 also closes it. Neither asks first.
+Risk:     a message like "no quiero que me llaméis por la noche" could read as
+          "stop contacting me" and end a valid application. Irreversible, but
+          less likely than gap 1.
+Proposed fix: confirm before closing on delete_data ("¿Quieres que borremos
+          tus datos y paremos el proceso?"), or raise the threshold and add
+          test messages close to the boundary.
+
+
+3. WORDING OF THE JEV QUESTIONS                                  [low, open]
+---------------------------------------------------------------------------
+Where:    classifier.py (option descriptions and instructions).
+Risk:     Jev reads instructions literally. A loosely described option changes
+          the result. The most sensitive case is the license: "expired" (only
+          needs renewal, accepted) vs "in_progress" (still getting it,
+          disqualified).
+Proposed fix: a small set of real candidate phrases per license option, run
+          against Jev as a regression test whenever the wording changes.

@@ -1,0 +1,3344 @@
+{
+ "candidates": [
+  {
+   "phone": "+34600000001",
+   "name": "Lucía Fernández Ortega",
+   "stage": "accepted",
+   "agent_status": "qualified",
+   "days_ago": 13,
+   "hours_in_stage": 2,
+   "decided_by": "agent",
+   "summary": "Apto: cumple todos los requisitos.\nCarnet en vigor; vive en Lavapiés, Madrid, a 1.2 km de Sol, Madrid.\nJornada completa; mañanas, tardes; 3 años de experiencia (Glovo, Uber Eats).\nPuede empezar en 5 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Lucía Fernández Ortega",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Lavapiés",
+      "place": "Lavapiés, Madrid",
+      "restaurant": "Sol, Madrid",
+      "distance_km": 1.2,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    },
+    "availability": {
+     "value": [
+      "full_time"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "morning",
+      "afternoon"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": 3,
+     "flagged": false,
+     "note": null
+    },
+    "platforms": {
+     "value": [
+      "Glovo",
+      "Uber Eats"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 5
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Lucía Fernández Ortega"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Lucía. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Lavapiés."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Jornada completa."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Mañanas y tardes."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, 3 años con Glovo y Uber Eats."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "Dentro de unas 1 semanas."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial, Lucía! Cumples los requisitos. El equipo te escribirá con los siguientes pasos."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 13,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000002",
+   "name": "Javier Moreno Ruiz",
+   "stage": "accepted",
+   "agent_status": "qualified",
+   "days_ago": 9,
+   "hours_in_stage": 7,
+   "decided_by": "agent",
+   "summary": "Apto: cumple todos los requisitos.\nCarnet en vigor; vive en Tetuán, Madrid, a 2.6 km de Chamberí, Madrid.\nMedia jornada; noches; 1 año de experiencia (Just Eat).\nPuede empezar en 7 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Javier Moreno Ruiz",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Tetuán",
+      "place": "Tetuán, Madrid",
+      "restaurant": "Chamberí, Madrid",
+      "distance_km": 2.6,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    },
+    "availability": {
+     "value": [
+      "part_time"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "evening"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": 1,
+     "flagged": false,
+     "note": null
+    },
+    "platforms": {
+     "value": [
+      "Just Eat"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 7
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Javier Moreno Ruiz"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Javier. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Tetuán."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Media jornada."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Noches."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, 1 año con Just Eat."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "Dentro de unas 1 semanas."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial, Javier! Cumples los requisitos. El equipo te escribirá con los siguientes pasos."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 9,
+     "hour": 10,
+     "answered": false
+    },
+    {
+     "days_ago": 9,
+     "hour": 17,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000003",
+   "name": "Carmen Jiménez Navarro",
+   "stage": "accepted",
+   "agent_status": "qualified",
+   "days_ago": 5,
+   "hours_in_stage": 12,
+   "decided_by": "agent",
+   "summary": "Apto: cumple todos los requisitos.\nCarnet en vigor; vive en Usera, Madrid, a 3.1 km de Carabanchel, Madrid.\nJornada completa, fines de semana; horario flexible; 5 años de experiencia (Glovo).\nPuede empezar en 3 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Carmen Jiménez Navarro",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Usera",
+      "place": "Usera, Madrid",
+      "restaurant": "Carabanchel, Madrid",
+      "distance_km": 3.1,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    },
+    "availability": {
+     "value": [
+      "full_time",
+      "weekends"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "flexible"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": 5,
+     "flagged": false,
+     "note": null
+    },
+    "platforms": {
+     "value": [
+      "Glovo"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 3
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Carmen Jiménez Navarro"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Carmen. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Usera."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Jornada completa y fines de semana."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Horario flexible."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, 5 años con Glovo."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "En cuanto me digáis."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial, Carmen! Cumples los requisitos. El equipo te escribirá con los siguientes pasos."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 5,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000004",
+   "name": "Daniel Romero Gil",
+   "stage": "accepted",
+   "agent_status": "qualified",
+   "days_ago": 3,
+   "hours_in_stage": 17,
+   "decided_by": "agent",
+   "summary": "Apto: cumple todos los requisitos.\nCarnet en vigor; vive en Retiro, Madrid, a 1.9 km de Salamanca, Madrid.\nMedia jornada, fines de semana; tardes, noches; sin experiencia previa.\nPuede empezar en 10 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Daniel Romero Gil",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Retiro",
+      "place": "Retiro, Madrid",
+      "restaurant": "Salamanca, Madrid",
+      "distance_km": 1.9,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    },
+    "availability": {
+     "value": [
+      "part_time",
+      "weekends"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "afternoon",
+      "evening"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": 0,
+     "flagged": false,
+     "note": null
+    },
+    "platforms": {
+     "value": [],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 10
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Daniel Romero Gil"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Daniel. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Retiro."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Media jornada y fines de semana."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Tardes y noches."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "No, sería mi primer trabajo de reparto."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "Dentro de unas 1 semanas."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial, Daniel! Cumples los requisitos. El equipo te escribirá con los siguientes pasos."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 3,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000005",
+   "name": "Sofía Álvarez Molina",
+   "stage": "accepted",
+   "agent_status": "qualified",
+   "days_ago": 0,
+   "hours_in_stage": 22,
+   "decided_by": "agent",
+   "summary": "Apto: cumple todos los requisitos.\nCarnet en vigor; vive en Leganés, Madrid, a 6.4 km de Getafe, Madrid.\nJornada completa; mañanas; 2 años de experiencia (Uber Eats).\nPuede empezar en 14 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Sofía Álvarez Molina",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Leganés",
+      "place": "Leganés, Madrid",
+      "restaurant": "Getafe, Madrid",
+      "distance_km": 6.4,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    },
+    "availability": {
+     "value": [
+      "full_time"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "morning"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": 2,
+     "flagged": false,
+     "note": null
+    },
+    "platforms": {
+     "value": [
+      "Uber Eats"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 14
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sofía Álvarez Molina"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Sofía. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Leganés."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Jornada completa."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Mañanas."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, 2 años con Uber Eats."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "Dentro de unas 2 semanas."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial, Sofía! Cumples los requisitos. El equipo te escribirá con los siguientes pasos."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 0,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000006",
+   "name": "Pablo Torres Castillo",
+   "stage": "accepted",
+   "agent_status": "qualified",
+   "days_ago": 10,
+   "hours_in_stage": 27,
+   "decided_by": "agent",
+   "summary": "Apto: cumple todos los requisitos.\nCarnet caducado, pendiente de renovar; vive en Arganzuela, Madrid, a 2.2 km de Sol, Madrid.\nJornada completa; tardes; 4 años de experiencia (Glovo, Just Eat).\nPuede empezar en 7 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Pablo Torres Castillo",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "expired",
+     "flagged": false,
+     "note": "license_needs_renewal"
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Arganzuela",
+      "place": "Arganzuela, Madrid",
+      "restaurant": "Sol, Madrid",
+      "distance_km": 2.2,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    },
+    "availability": {
+     "value": [
+      "full_time"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "afternoon"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": 4,
+     "flagged": false,
+     "note": null
+    },
+    "platforms": {
+     "value": [
+      "Glovo",
+      "Just Eat"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 7
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Pablo Torres Castillo"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Pablo. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, lo tengo caducado de hace poco, pero lo renuevo ya."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Arganzuela."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Jornada completa."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Tardes."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, 4 años con Glovo y Just Eat."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "Dentro de unas 1 semanas."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial, Pablo! Cumples los requisitos. El equipo te escribirá con los siguientes pasos."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 10,
+     "hour": 10,
+     "answered": false
+    },
+    {
+     "days_ago": 10,
+     "hour": 17,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000007",
+   "name": "Elena Ramírez Delgado",
+   "stage": "accepted",
+   "agent_status": "needs_review",
+   "days_ago": 6,
+   "hours_in_stage": 32,
+   "decided_by": "laura.gomez@gruposazon.es",
+   "summary": "Necesita revisión: solo disponible fines de semana y con horario flexible poco concreto.\nCarnet en vigor; vive en Moncloa, Madrid, a 2.0 km de Chamberí, Madrid.\nFines de semana; horario flexible; 1 año de experiencia (Glovo).\nPuede empezar en 2 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Elena Ramírez Delgado",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Moncloa",
+      "place": "Moncloa, Madrid",
+      "restaurant": "Chamberí, Madrid",
+      "distance_km": 2.0,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    },
+    "availability": {
+     "value": [
+      "weekends"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "flexible"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": 1,
+     "flagged": false,
+     "note": null
+    },
+    "platforms": {
+     "value": [
+      "Glovo"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 2
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Elena Ramírez Delgado"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Elena. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Moncloa."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Fines de semana."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Horario flexible."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, 1 año con Glovo."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "En cuanto me digáis."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Gracias, Elena! Un compañero del equipo revisará tu candidatura y te contactará pronto."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "La agente la dejó en revisión por la disponibilidad; lo hablé con ella y encaja en los turnos de fin de semana. — Laura",
+   "calls": [
+    {
+     "days_ago": 6,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000008",
+   "name": "Andrés Vázquez Serrano",
+   "stage": "accepted",
+   "agent_status": "qualified",
+   "days_ago": 3,
+   "hours_in_stage": 37,
+   "decided_by": "agent",
+   "summary": "Apto: cumple todos los requisitos.\nCarnet en vigor; vive en Latina, Madrid, a 2.8 km de Carabanchel, Madrid.\nJornada completa; noches; 6 años de experiencia (Uber Eats, Deliveroo).\nPuede empezar en 4 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Andrés Vázquez Serrano",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Latina",
+      "place": "Latina, Madrid",
+      "restaurant": "Carabanchel, Madrid",
+      "distance_km": 2.8,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    },
+    "availability": {
+     "value": [
+      "full_time"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "evening"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": 6,
+     "flagged": false,
+     "note": null
+    },
+    "platforms": {
+     "value": [
+      "Uber Eats",
+      "Deliveroo"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 4
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Andrés Vázquez Serrano"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Andrés. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Latina."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Jornada completa."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Noches."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, 6 años con Uber Eats y Deliveroo."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "Dentro de unas 1 semanas."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial, Andrés! Cumples los requisitos. El equipo te escribirá con los siguientes pasos."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 3,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000009",
+   "name": "Marta Castro Iglesias",
+   "stage": "accepted",
+   "agent_status": "qualified",
+   "days_ago": 1,
+   "hours_in_stage": 2,
+   "decided_by": "agent",
+   "summary": "Apto: cumple todos los requisitos.\nCarnet en vigor; vive en Ciudad Lineal, Madrid, a 4.3 km de Salamanca, Madrid.\nMedia jornada; mañanas; sin experiencia previa.\nPuede empezar en 21 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Marta Castro Iglesias",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Ciudad Lineal",
+      "place": "Ciudad Lineal, Madrid",
+      "restaurant": "Salamanca, Madrid",
+      "distance_km": 4.3,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    },
+    "availability": {
+     "value": [
+      "part_time"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "morning"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": 0,
+     "flagged": false,
+     "note": null
+    },
+    "platforms": {
+     "value": [],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 21
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Marta Castro Iglesias"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Marta. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Ciudad Lineal."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Media jornada."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Mañanas."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "No, sería mi primer trabajo de reparto."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "Dentro de unas 3 semanas."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial, Marta! Cumples los requisitos. El equipo te escribirá con los siguientes pasos."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 1,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000010",
+   "name": "Hugo Ortiz Rubio",
+   "stage": "accepted",
+   "agent_status": "qualified",
+   "days_ago": 11,
+   "hours_in_stage": 7,
+   "decided_by": "agent",
+   "summary": "Apto: cumple todos los requisitos.\nCarnet en vigor; vive en Villaverde, Madrid, a 5.7 km de Getafe, Madrid.\nJornada completa, fines de semana; tardes, noches; 2 años de experiencia (Glovo).\nPuede empezar en 6 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Hugo Ortiz Rubio",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Villaverde",
+      "place": "Villaverde, Madrid",
+      "restaurant": "Getafe, Madrid",
+      "distance_km": 5.7,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    },
+    "availability": {
+     "value": [
+      "full_time",
+      "weekends"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "afternoon",
+      "evening"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": 2,
+     "flagged": false,
+     "note": null
+    },
+    "platforms": {
+     "value": [
+      "Glovo"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 6
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Hugo Ortiz Rubio"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Hugo. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Villaverde."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Jornada completa y fines de semana."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Tardes y noches."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, 2 años con Glovo."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "Dentro de unas 1 semanas."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial, Hugo! Cumples los requisitos. El equipo te escribirá con los siguientes pasos."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 11,
+     "hour": 10,
+     "answered": false
+    },
+    {
+     "days_ago": 11,
+     "hour": 17,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000011",
+   "name": "Raúl Sanz Domínguez",
+   "stage": "revision",
+   "agent_status": "needs_review",
+   "days_ago": 7,
+   "hours_in_stage": 12,
+   "decided_by": "agent",
+   "summary": "Necesita revisión: vive a 17.4 km del restaurante (zona de 15 a 20 km).\nCarnet en vigor; vive en Alcorcón, Madrid, a 17.4 km de Carabanchel, Madrid.\nJornada completa; mañanas; 3 años de experiencia (Glovo).\nPuede empezar en 7 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Raúl Sanz Domínguez",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Alcorcón",
+      "place": "Alcorcón, Madrid",
+      "restaurant": "Carabanchel, Madrid",
+      "distance_km": 17.4,
+      "options": []
+     },
+     "flagged": true,
+     "note": "location_borderline_distance"
+    },
+    "availability": {
+     "value": [
+      "full_time"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "morning"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": 3,
+     "flagged": false,
+     "note": null
+    },
+    "platforms": {
+     "value": [
+      "Glovo"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 7
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [
+    "location_borderline_distance"
+   ],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Raúl Sanz Domínguez"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Raúl. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Alcorcón."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Jornada completa."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Mañanas."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, 3 años con Glovo."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "Dentro de unas 1 semanas."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Gracias, Raúl! Un compañero del equipo revisará tu candidatura y te contactará pronto."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 7,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000012",
+   "name": "Paula Herrera Medina",
+   "stage": "revision",
+   "agent_status": "needs_review",
+   "days_ago": 4,
+   "hours_in_stage": 17,
+   "decided_by": "agent",
+   "summary": "Necesita revisión: no puede empezar hasta dentro de más de 60 días.\nCarnet en vigor; vive en Chamartín, Madrid, a 3.4 km de Chamberí, Madrid.\nMedia jornada; tardes; 2 años de experiencia (Uber Eats).\nPuede empezar en 75 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Paula Herrera Medina",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Chamartín",
+      "place": "Chamartín, Madrid",
+      "restaurant": "Chamberí, Madrid",
+      "distance_km": 3.4,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    },
+    "availability": {
+     "value": [
+      "part_time"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "afternoon"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": 2,
+     "flagged": false,
+     "note": null
+    },
+    "platforms": {
+     "value": [
+      "Uber Eats"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 75
+     },
+     "flagged": true,
+     "note": "start_date_far"
+    }
+   },
+   "review_reasons": [
+    "start_date_far"
+   ],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Paula Herrera Medina"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Paula. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Chamartín."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Media jornada."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Tardes."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, 2 años con Uber Eats."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "Hasta dentro de un par de meses largos no puedo, termino otro contrato."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Gracias, Paula! Un compañero del equipo revisará tu candidatura y te contactará pronto."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 4,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000013",
+   "name": "Sergio Peña Cabrera",
+   "stage": "revision",
+   "agent_status": "needs_review",
+   "days_ago": 2,
+   "hours_in_stage": 22,
+   "decided_by": "agent",
+   "summary": "Necesita revisión: no concretó sus años de experiencia.\nCarnet en vigor; vive en Puente de Vallecas, Madrid, a 4.9 km de Sol, Madrid.\nJornada completa; horario flexible; experiencia sin concretar.\nPuede empezar en 5 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Sergio Peña Cabrera",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Puente de Vallecas",
+      "place": "Puente de Vallecas, Madrid",
+      "restaurant": "Sol, Madrid",
+      "distance_km": 4.9,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    },
+    "availability": {
+     "value": [
+      "full_time"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "flexible"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": null,
+     "flagged": true,
+     "note": "experience_years_unresolved_after_retries"
+    },
+    "platforms": {
+     "value": [
+      "Glovo"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 5
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [
+    "experience_years_unresolved_after_retries"
+   ],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sergio Peña Cabrera"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Sergio. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Puente de Vallecas."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Jornada completa."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Horario flexible."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "Bueno, he hecho cosas sueltas con Glovo, a ratos."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuánto tiempo, más o menos, en total?"
+    },
+    {
+     "role": "candidate",
+     "text": "Uf, depende, unas temporadas sí y otras no."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "Dentro de unas 1 semanas."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Gracias, Sergio! Un compañero del equipo revisará tu candidatura y te contactará pronto."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 2,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000014",
+   "name": "Irene Campos León",
+   "stage": "revision",
+   "agent_status": "needs_review",
+   "days_ago": 12,
+   "hours_in_stage": 27,
+   "decided_by": "agent",
+   "summary": "Necesita revisión: vive a 18.9 km del restaurante (zona de 15 a 20 km); no puede empezar hasta dentro de más de 60 días.\nCarnet en vigor; vive en Fuenlabrada, Madrid, a 18.9 km de Getafe, Madrid.\nFines de semana; noches; 1 año de experiencia.\nPuede empezar en 70 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Irene Campos León",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Fuenlabrada",
+      "place": "Fuenlabrada, Madrid",
+      "restaurant": "Getafe, Madrid",
+      "distance_km": 18.9,
+      "options": []
+     },
+     "flagged": true,
+     "note": "location_borderline_distance"
+    },
+    "availability": {
+     "value": [
+      "weekends"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "evening"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": 1,
+     "flagged": false,
+     "note": null
+    },
+    "platforms": {
+     "value": [],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 70
+     },
+     "flagged": true,
+     "note": "start_date_far"
+    }
+   },
+   "review_reasons": [
+    "location_borderline_distance",
+    "start_date_far"
+   ],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Irene Campos León"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Irene. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Fuenlabrada."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Fines de semana."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Noches."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, 1 año."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "Hasta dentro de un par de meses largos no puedo, termino otro contrato."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Gracias, Irene! Un compañero del equipo revisará tu candidatura y te contactará pronto."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 12,
+     "hour": 10,
+     "answered": false
+    },
+    {
+     "days_ago": 12,
+     "hour": 17,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000015",
+   "name": "Adrián Gallego Prieto",
+   "stage": "revision",
+   "agent_status": "needs_review",
+   "days_ago": 8,
+   "hours_in_stage": 32,
+   "decided_by": "laura.gomez@gruposazon.es",
+   "summary": "Necesita revisión: descartado por distancia (22.3 km); un recruiter lo pasó a revisión.\nCarnet en vigor; vive en Torrejón de Ardoz, Madrid, a 22.3 km de Salamanca, Madrid.\nJornada completa; mañanas, tardes; 7 años de experiencia (Glovo, Uber Eats, Just Eat).\nPuede empezar en 3 días.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Adrián Gallego Prieto",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Torrejón de Ardoz",
+      "place": "Torrejón de Ardoz, Madrid",
+      "restaurant": "Salamanca, Madrid",
+      "distance_km": 22.3,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    },
+    "availability": {
+     "value": [
+      "full_time"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "schedule": {
+     "value": [
+      "morning",
+      "afternoon"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "experience_years": {
+     "value": 7,
+     "flagged": false,
+     "note": null
+    },
+    "platforms": {
+     "value": [
+      "Glovo",
+      "Uber Eats",
+      "Just Eat"
+     ],
+     "flagged": false,
+     "note": null
+    },
+    "start_date": {
+     "value": {
+      "in_days": 3
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [
+    "override_out_of_area"
+   ],
+   "disqualify_reason": "out_of_area",
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Adrián Gallego Prieto"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Adrián. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Torrejón de Ardoz."
+    },
+    {
+     "role": "agent",
+     "text": "¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Jornada completa."
+    },
+    {
+     "role": "agent",
+     "text": "¿Y qué turno prefieres: mañanas, tardes, noches o flexible?"
+    },
+    {
+     "role": "candidate",
+     "text": "Mañanas y tardes."
+    },
+    {
+     "role": "agent",
+     "text": "¿Tienes experiencia como repartidor? ¿Cuántos años y en qué plataformas?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, 7 años con Glovo y Uber Eats y Just Eat."
+    },
+    {
+     "role": "agent",
+     "text": "¿Cuándo podrías empezar?"
+    },
+    {
+     "role": "candidate",
+     "text": "En cuanto me digáis."
+    },
+    {
+     "role": "agent",
+     "text": "Te resumo lo que me has contado. ¿Todo correcto?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, todo correcto."
+    },
+    {
+     "role": "agent",
+     "text": "¡Gracias, Adrián! Un compañero del equipo revisará tu candidatura y te contactará pronto."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "Tiene coche propio y siete años de experiencia. Lo paso a revisión para valorar la distancia. — Laura",
+   "calls": [
+    {
+     "days_ago": 8,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000016",
+   "name": "Alberto Núñez Vidal",
+   "stage": "rejected",
+   "agent_status": "disqualified",
+   "days_ago": 5,
+   "hours_in_stage": 37,
+   "decided_by": "agent",
+   "summary": "Descartado: no tiene carnet de conducir, requisito imprescindible.\nSe le invitó a volver a solicitarlo cuando lo tenga.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Alberto Núñez Vidal",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "no",
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": "no_license",
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Alberto Núñez Vidal"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Alberto. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "No, carnet no tengo."
+    },
+    {
+     "role": "agent",
+     "text": "Vaya, Alberto, para este puesto el carnet es imprescindible. Si más adelante lo sacas, vuelve a escribirnos. ¡Gracias por tu interés!"
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 5,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000017",
+   "name": "Natalia Reyes Fuentes",
+   "stage": "rejected",
+   "agent_status": "disqualified",
+   "days_ago": 2,
+   "hours_in_stage": 2,
+   "decided_by": "agent",
+   "summary": "Descartado: no tiene carnet de conducir, requisito imprescindible.\nSe le invitó a volver a solicitarlo cuando lo tenga.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Natalia Reyes Fuentes",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "no",
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": "no_license",
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Natalia Reyes Fuentes"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Natalia. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "No, carnet no tengo."
+    },
+    {
+     "role": "agent",
+     "text": "Vaya, Natalia, para este puesto el carnet es imprescindible. Si más adelante lo sacas, vuelve a escribirnos. ¡Gracias por tu interés!"
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 2,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000018",
+   "name": "Iván Lozano Marín",
+   "stage": "rejected",
+   "agent_status": "disqualified",
+   "days_ago": 0,
+   "hours_in_stage": 7,
+   "decided_by": "agent",
+   "summary": "Descartado: no tiene carnet de conducir, requisito imprescindible.\nSe le invitó a volver a solicitarlo cuando lo tenga.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Iván Lozano Marín",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "no",
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": "no_license",
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Iván Lozano Marín"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Iván. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "No, carnet no tengo."
+    },
+    {
+     "role": "agent",
+     "text": "Vaya, Iván, para este puesto el carnet es imprescindible. Si más adelante lo sacas, vuelve a escribirnos. ¡Gracias por tu interés!"
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 0,
+     "hour": 10,
+     "answered": false
+    },
+    {
+     "days_ago": 0,
+     "hour": 17,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000019",
+   "name": "Cristina Santos Pascual",
+   "stage": "rejected",
+   "agent_status": "disqualified",
+   "days_ago": 9,
+   "hours_in_stage": 12,
+   "decided_by": "agent",
+   "summary": "Descartado: vive en Alcalá de Henares, Madrid, a 29.5 km del restaurante más cercano (Salamanca, Madrid). Límite: 20 km.\nTiene carnet. Se le ofreció guardar la candidatura.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Cristina Santos Pascual",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Alcalá de Henares",
+      "place": "Alcalá de Henares, Madrid",
+      "restaurant": "Salamanca, Madrid",
+      "distance_km": 29.5,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": "out_of_area",
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Cristina Santos Pascual"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Cristina. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Alcalá de Henares."
+    },
+    {
+     "role": "agent",
+     "text": "Gracias. Estás a unos 30 kilómetros del restaurante más cercano y ahora mismo no tenemos uno lo bastante cerca. Si te mudas, ¡vuelve a escribirnos!"
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 9,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000020",
+   "name": "Rubén Guerrero Soto",
+   "stage": "rejected",
+   "agent_status": "disqualified",
+   "days_ago": 6,
+   "hours_in_stage": 17,
+   "decided_by": "agent",
+   "summary": "Descartado: vive en Aranjuez, Madrid, a 33.0 km del restaurante más cercano (Getafe, Madrid). Límite: 20 km.\nTiene carnet. Se le ofreció guardar la candidatura.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Rubén Guerrero Soto",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Aranjuez",
+      "place": "Aranjuez, Madrid",
+      "restaurant": "Getafe, Madrid",
+      "distance_km": 33.0,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": "out_of_area",
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Rubén Guerrero Soto"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Rubén. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Aranjuez."
+    },
+    {
+     "role": "agent",
+     "text": "Gracias. Estás a unos 33 kilómetros del restaurante más cercano y ahora mismo no tenemos uno lo bastante cerca. Si te mudas, ¡vuelve a escribirnos!"
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 6,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000021",
+   "name": "Beatriz Méndez Calvo",
+   "stage": "rejected",
+   "agent_status": "disqualified",
+   "days_ago": 3,
+   "hours_in_stage": 22,
+   "decided_by": "agent",
+   "summary": "Descartado: vive en Collado Villalba, Madrid, a 36.2 km del restaurante más cercano (Chamberí, Madrid). Límite: 20 km.\nTiene carnet. Se le ofreció guardar la candidatura.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Beatriz Méndez Calvo",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Collado Villalba",
+      "place": "Collado Villalba, Madrid",
+      "restaurant": "Chamberí, Madrid",
+      "distance_km": 36.2,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": "out_of_area",
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Beatriz Méndez Calvo"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Beatriz. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Collado Villalba."
+    },
+    {
+     "role": "agent",
+     "text": "Gracias. Estás a unos 36 kilómetros del restaurante más cercano y ahora mismo no tenemos uno lo bastante cerca. Si te mudas, ¡vuelve a escribirnos!"
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 3,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000022",
+   "name": "Óscar Rojas Vega",
+   "stage": "rejected",
+   "agent_status": "disqualified",
+   "days_ago": 1,
+   "hours_in_stage": 27,
+   "decided_by": "agent",
+   "summary": "Descartado: se está sacando el carnet (aún no en vigor).\nBuena actitud; recontactar cuando tenga el carnet.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Óscar Rojas Vega",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "in_progress",
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": "license_in_progress",
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Óscar Rojas Vega"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Óscar. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Me lo estoy sacando, tengo el práctico el mes que viene."
+    },
+    {
+     "role": "agent",
+     "text": "¡Mucha suerte con el práctico! Para empezar necesitamos el carnet ya en vigor; en cuanto lo tengas, vuelve a solicitarlo. ¡Gracias!"
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 1,
+     "hour": 10,
+     "answered": false
+    },
+    {
+     "days_ago": 1,
+     "hour": 17,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000023",
+   "name": "Alba Crespo Herrero",
+   "stage": "rejected",
+   "agent_status": "disqualified",
+   "days_ago": 10,
+   "hours_in_stage": 32,
+   "decided_by": "agent",
+   "summary": "Descartado: se está sacando el carnet (aún no en vigor).\nBuena actitud; recontactar cuando tenga el carnet.",
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Alba Crespo Herrero",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "in_progress",
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": "license_in_progress",
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Alba Crespo Herrero"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Alba. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Me lo estoy sacando, tengo el práctico el mes que viene."
+    },
+    {
+     "role": "agent",
+     "text": "¡Mucha suerte con el práctico! Para empezar necesitamos el carnet ya en vigor; en cuanto lo tengas, vuelve a solicitarlo. ¡Gracias!"
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 10,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000024",
+   "name": "Mario Benítez Aguilar",
+   "stage": "rejected",
+   "agent_status": "declined",
+   "days_ago": 7,
+   "hours_in_stage": 37,
+   "decided_by": "agent",
+   "summary": "No quiso hacer la entrevista en este momento. No se recogieron datos.",
+   "answers": {
+    "consent": {
+     "value": "no",
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": "declined",
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Uy, no, ahora mismo no me interesa, gracias."
+    },
+    {
+     "role": "agent",
+     "text": "Entendido. Gracias por tu tiempo y mucha suerte."
+    }
+   ],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 7,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000025",
+   "name": "Laura Pastor Ibáñez",
+   "stage": "queue",
+   "agent_status": null,
+   "days_ago": 4,
+   "hours_in_stage": 2,
+   "decided_by": null,
+   "summary": null,
+   "answers": {},
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [],
+   "attempts": 2,
+   "retry_reason": "no_answer",
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 4,
+     "hour": 11,
+     "answered": false
+    },
+    {
+     "days_ago": 3,
+     "hour": 15,
+     "answered": false
+    }
+   ]
+  },
+  {
+   "phone": "+34600000026",
+   "name": "Diego Carmona Arias",
+   "stage": "queue",
+   "agent_status": null,
+   "days_ago": 1,
+   "hours_in_stage": 7,
+   "decided_by": null,
+   "summary": null,
+   "answers": {},
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [],
+   "attempts": 1,
+   "retry_reason": "no_answer",
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 1,
+     "hour": 11,
+     "answered": false
+    }
+   ]
+  },
+  {
+   "phone": "+34600000027",
+   "name": "Noelia Vargas Ferrer",
+   "stage": "queue",
+   "agent_status": "in_progress",
+   "days_ago": 12,
+   "hours_in_stage": 12,
+   "decided_by": null,
+   "summary": null,
+   "answers": {
+    "consent": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "full_name": {
+     "value": "Noelia Vargas Ferrer",
+     "flagged": false,
+     "note": null
+    },
+    "has_license": {
+     "value": "yes",
+     "flagged": false,
+     "note": null
+    },
+    "location": {
+     "value": {
+      "status": "ok",
+      "query": "Carabanchel",
+      "place": "Carabanchel, Madrid",
+      "restaurant": "Carabanchel, Madrid",
+      "distance_km": 0.8,
+      "options": []
+     },
+     "flagged": false,
+     "note": null
+    }
+   },
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [
+    {
+     "role": "agent",
+     "text": "¡Hola! Soy Sofía, la asistente de selección de Grupo Sazón. Soy una inteligencia artificial. Te llamo por tu solicitud de repartidor; lo que hablemos solo se usa para el proceso de selección. ¿Empezamos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, vale, dale."
+    },
+    {
+     "role": "agent",
+     "text": "¡Genial! ¿Me dices tu nombre y apellidos?"
+    },
+    {
+     "role": "candidate",
+     "text": "Noelia Vargas Ferrer"
+    },
+    {
+     "role": "agent",
+     "text": "Gracias, Noelia. ¿Tienes carnet de conducir en vigor?"
+    },
+    {
+     "role": "candidate",
+     "text": "Sí, tengo el B."
+    },
+    {
+     "role": "agent",
+     "text": "Perfecto. ¿En qué barrio y ciudad vives?"
+    },
+    {
+     "role": "candidate",
+     "text": "En Carabanchel."
+    },
+    {
+     "role": "agent",
+     "text": "Genial, tienes un restaurante muy cerca. ¿Qué disponibilidad tienes: jornada completa, media jornada o fines de semana?"
+    },
+    {
+     "role": "candidate",
+     "text": "Pues mira, es que ahora me pillas en el metro, te..."
+    }
+   ],
+   "attempts": 1,
+   "retry_reason": "hung_up",
+   "team_note": "",
+   "calls": [
+    {
+     "days_ago": 12,
+     "hour": 11,
+     "answered": true
+    }
+   ]
+  },
+  {
+   "phone": "+34600000028",
+   "name": "Samuel Morales Bravo",
+   "stage": "queue",
+   "agent_status": null,
+   "days_ago": 8,
+   "hours_in_stage": 17,
+   "decided_by": null,
+   "summary": null,
+   "answers": {},
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "",
+   "calls": []
+  },
+  {
+   "phone": "+34600000029",
+   "name": "Claudia Ramos Esteban",
+   "stage": "queue",
+   "agent_status": null,
+   "days_ago": 5,
+   "hours_in_stage": 22,
+   "decided_by": null,
+   "summary": null,
+   "answers": {},
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "Source: Referral",
+   "calls": []
+  },
+  {
+   "phone": "+34600000030",
+   "name": "Víctor Flores Montero",
+   "stage": "queue",
+   "agent_status": null,
+   "days_ago": 2,
+   "hours_in_stage": 27,
+   "decided_by": null,
+   "summary": null,
+   "answers": {},
+   "review_reasons": [],
+   "disqualify_reason": null,
+   "transcript": [],
+   "attempts": 0,
+   "retry_reason": null,
+   "team_note": "Source: Job board",
+   "calls": []
+  }
+ ]
+}

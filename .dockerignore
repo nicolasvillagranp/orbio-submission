@@ -1,0 +1,9 @@
+.venv
+.env
+.git
+infra/livekit/recordings
+__pycache__
+data/*.db
+data/*.db-*
+data/candidates.json
+.pytest_cache

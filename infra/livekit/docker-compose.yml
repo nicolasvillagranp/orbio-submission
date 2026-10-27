@@ -1,0 +1,55 @@
+# LiveKit + SIP en local (Docker Desktop para Mac) o en un VPS.
+#   docker compose up -d && docker compose logs -f sip
+#
+# redis y sip comparten la red del contenedor livekit, así los tres se ven por
+# localhost y el navegador del Mac llega al audio por los puertos publicados.
+services:
+  livekit:
+    image: livekit/livekit-server:latest
+    command: --config /etc/livekit.yaml
+    volumes: [./livekit.yaml:/etc/livekit.yaml]
+    ports:
+      - "7880:7880"                         # API + WebSocket
+      - "7881:7881"                         # WebRTC por TCP
+      - "51000-51100:51000-51100/udp"       # WebRTC por UDP (50000-50059 lo reserva Windows/Teams)
+      - "5060:5060/udp"                     # SIP
+      - "5060:5060/tcp"
+      - "10000-10100:10000-10100/udp"       # RTP (audio con Zadarma)
+  redis:
+    image: redis:7-alpine
+    network_mode: "service:livekit"
+  sip:
+    image: livekit/sip:latest
+    volumes: [./sip.yaml:/sip/config.yaml]
+    network_mode: "service:livekit"
+    depends_on: [livekit, redis]
+  # Grabación de las llamadas (audio .ogg en ./recordings). Room composite usa
+  # Chrome headless, de ahí SYS_ADMIN.
+  egress:
+    image: livekit/egress:latest
+    environment:
+      EGRESS_CONFIG_FILE: /etc/egress.yaml
+    volumes:
+      - ./egress.yaml:/etc/egress.yaml
+      - ./recordings:/out
+    cap_add: [SYS_ADMIN]
+    network_mode: "service:livekit"
+    depends_on: [livekit, redis]
+
+  # Agente de voz (opcional). No arranca con "up" normal:
+  #   docker compose --profile agent up -d --build
+  agent:
+    profiles: [agent]
+    build:
+      context: ../..
+      dockerfile: voice/Dockerfile
+    env_file:
+      - path: ../../.env
+        required: false
+    environment:
+      LIVEKIT_URL: ws://localhost:7880
+    volumes:
+      # Conversations (SQLite) survive rebuilds and are the same ones the host sees
+      - ../../data:/app/data
+    network_mode: "service:livekit"
+    depends_on: [livekit]

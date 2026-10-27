@@ -1,0 +1,185 @@
+TECHNICAL DECISIONS - Grupo Sazón candidate screening
+=====================================================
+
+Principle: reuse proven open-source tools and managed APIs for everything that
+is not specific to this client. We only write code for what is unique here:
+the screening rules, the questions we ask the classifier, the prompts, and the
+glue between components.
+
+
+1. CONVERSATION ORCHESTRATION -> LangGraph
+------------------------------------------
+Reused:   LangGraph (state graph, checkpointing, retries, interrupts).
+We write: the graph nodes (classify -> apply rules -> reply) and their wiring.
+Instead of: a hand-written agent loop, state machine and session store.
+Why:
+  - The screening is a stateful, multi-turn process with branching. That's the
+    problem LangGraph is built for.
+  - Its checkpointer saves the full state after every message, keyed by
+    conversation (e.g. the candidate's phone number). A candidate can reply
+    hours later and the conversation resumes where it stopped, with no custom
+    persistence code.
+  - The graph is easy to inspect, test node by node, and draw for the
+    presentation.
+Rejected:
+  - Rasa CALM: closest fit on paper, but open-core. The free Developer Edition
+    is capped at 1,000 conversations/month and this client receives ~1,000
+    applications/week. It's also a large framework with its own DSL.
+  - Parlant: strong for keeping agents on script, weaker for structured field
+    extraction and validation.
+  - Pipecat Flows: tied to the Pipecat voice stack, and we use LiveKit.
+  - LiveKit TaskGroup for the whole flow: voice-only. We would have to maintain
+    the screening flow twice (voice and WhatsApp).
+
+
+2. VOICE -> LiveKit Agents
+--------------------------
+Reused:   LiveKit Agents + self-hosted LiveKit server and SIP gateway in Docker
+          (WebRTC, voice activity detection, turn detection, interruptions),
+          Zadarma (SIP trunk), Deepgram (speech-to-text), Cartesia
+          (text-to-speech).
+We write: a thin voice adapter that forwards each turn to the same LangGraph
+          screening graph used by WhatsApp.
+Instead of: our own audio pipeline, turn-taking or interruption handling.
+Why: real-time voice is a hard, solved problem. One screening graph serves
+     every channel, so voice and text can never drift apart.
+
+
+3. WHATSAPP -> Twilio
+---------------------
+Reused:   Twilio WhatsApp API (sandbox for the demo).
+We write: one webhook endpoint that passes messages into the graph.
+Instead of: integrating Meta's WhatsApp Cloud API directly.
+Why: minutes to set up, no Meta business verification for the demo.
+     Production path: Twilio or Meta Cloud API with approved templates.
+
+
+4. LANGUAGE MODEL -> Claude Haiku 5.5 (official Anthropic Python SDK)
+--------------------------------------------------------------------
+Reused:   Anthropic SDK: tool use, strict tool schemas, prompt caching,
+          retries, server-side refusal fallback.
+We write: the system prompt and one tool (record free-text answers).
+Why Haiku: the fastest Claude model, which matters most on a live call, and the
+     cheapest per screening. Claude only extracts free-text answers and
+     phrases one instruction per turn; code makes every decision, so a larger
+     model isn't needed. Configurable in config/config.yaml.
+Why the SDK directly (inside LangGraph nodes) rather than a wrapper: full
+     access to current API features with no lag behind new releases.
+
+
+5. ANSWER CLASSIFICATION -> Jev (TypeSafe SDK)
+----------------------------------------------
+Reused:   Jev System One model: typed answers (choice / yes-no / score) with
+          calibrated confidence, many questions answered in one call.
+We write: the question definitions only.
+Instead of: prompting an LLM to "return JSON with a confidence score", which
+            gives uncalibrated, self-reported confidence.
+Why: calibrated confidence drives the accept / confirm / re-ask gate. One call
+     per message also detects language switches, questions, abuse, prompt
+     injection and requests for a human. Fast (sub-second) and cheap.
+
+
+6. SERVICE AREA -> OpenStreetMap Nominatim
+------------------------------------------
+Reused:   Nominatim geocoding (free, no key) for place -> coordinates.
+We write: distance to the nearest restaurant and the decision thresholds
+          (<=15 km in area, 15-20 km recruiter review, >20 km out of area).
+Instead of: a hand-maintained list of cities, suburbs and aliases.
+Why: covers any neighbourhood or town without maintenance. Production path: a
+     hosted OSM provider (LocationIQ, Geoapify) or self-hosted Nominatim.
+
+
+7. DATA MODEL AND VALIDATION -> Pydantic
+----------------------------------------
+Reused:   Pydantic models for the screening record and conversation state.
+We write: the business rules (rules.py): knockouts, confidence gate, retries,
+          final outcome. This is the core of the product and stays in plain,
+          tested Python so every decision can be explained.
+
+
+8. RECRUITER VIEW -> React on Vercel + Supabase
+------------------------------------------------
+Reused:   Supabase (Postgres, realtime updates, invite-only logins), Vercel
+          hosting, React + Vite.
+We write: a phone-friendly board (Queue / In revision / Accepted / Rejected),
+          the candidate page, and a call worker on the laptop that places
+          the calls recruiters request and writes each outcome back.
+Why: recruiters on several devices see the same live board, and nothing on
+     the laptop is exposed to the internet: the worker only pulls requests
+     and pushes results.
+
+
+9. CONFIGURATION AND TESTS
+--------------------------
+Reused:   YAML (config/config.yaml), JSON (data/restaurants.json), python-dotenv
+          for secrets, pytest.
+Why: business settings change without touching code. Secrets never live in
+     the repository.
+
+
+10. DRIVER'S LICENSE -> self-declared, no photo requested (deliberate)
+--------------------------------------------------------------------
+Decision: the agent asks whether the candidate has a valid license and records
+          the answer. It never asks for a photo or scan of the license.
+Why:
+  - Data minimisation. A license is an identity document: full name, photo,
+    date of birth, document number, address in some countries. Screening only
+    needs to know "can this person legally drive". Collecting more than needed
+    goes against GDPR's data-minimisation principle (Spain) and the
+    proportionality principle of Mexico's personal-data law (LFPDPPP).
+  - Risk. Identity-document images are prime material for identity fraud.
+    Storing ~1,000 of them a week would make the system a high-value target
+    and add encryption, access-control, retention and breach-notification
+    obligations far beyond the scope of a screening tool.
+  - Third parties. A photo sent over WhatsApp passes through and is stored by
+    Meta and Twilio before reaching us.
+  - Little added value. A photo can be fake or someone else's, so it doesn't
+    truly verify anything. Checking a photo automatically would need document
+    verification tooling, not a screening chatbot.
+  - Friction. Asking for an ID photo in the first minutes of a chat makes
+    candidates drop off, which works against the client's main problem.
+Where verification happens instead: at the interview or onboarding, where the
+recruiter sees the original document as part of the normal hiring process.
+The screening record stores the candidate's own answer and when they gave it.
+
+
+11. AI DISCLOSURE -> always, in the first message
+------------------------------------------------
+Decision: the opening message on every channel says the candidate is talking to
+          an artificial intelligence and that a human recruiter reviews their
+          application. The agent never implies it is a person, and confirms it
+          is an AI whenever asked.
+Why: EU law (AI Act transparency obligations) requires that people are told
+     when they interact with an AI system. It's also simply honest, and it
+     sets the right expectation that a person makes the final call.
+
+
+12. AUTOMATED REJECTIONS -> a human can always review them
+---------------------------------------------------------
+Context: AI used in hiring is classed as high-risk under the EU AI Act, and
+         GDPR Art. 22 gives people the right not to be subject to decisions
+         based solely on automated processing that significantly affect them.
+         Our knockout rules (no license, license still in progress, out of the
+         service area) end the screening automatically.
+Decision:
+  - Disqualified candidates are never hidden. They stay in their own list in
+    the recruiter view, with the reason, and a recruiter can override the
+    decision. (Built with the recruiter view.)
+  - The closing message for a disqualified candidate says why they didn't move
+    forward and that they can ask for a human to review it.
+  - Only clear, high-confidence answers trigger a knockout. Anything uncertain
+    is confirmed with the candidate or sent to a recruiter, never rejected
+    (see the confidence gate in rules.py).
+Why: keeps a person in control of every rejection, meets the human-oversight
+     expectation for high-risk hiring systems, and keeps the promise made in
+     the opening message.
+
+
+WHAT IS CUSTOM CODE, AND WHY
+----------------------------
+  - rules.py            Client-specific screening rules. No framework can know
+                        them; they must be explicit and testable.
+  - classifier.py       Which questions we ask Jev.
+  - geocoding.py        Distance thresholds on top of Nominatim.
+  - graph nodes/prompts What the agent says, in which order.
+Everything else is an existing library or managed service.

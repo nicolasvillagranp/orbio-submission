@@ -1,0 +1,188 @@
+<title>Sazón Screening Architecture</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one wide column of two blueprint figures, sized to read at 1080p in a screen recording */
+:root {
+  --bg: #F3F5F8; --panel: #FFFFFF; --fg: #14202E; --muted: #5B6878; --line: #AEB8C5;
+  --code: #1F5FBF; --code-tint: #E7EEFA; --model: #7A4BB0; --model-tint: #F1EAF8;
+  --display: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+  --mono: "IBM Plex Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0F1620; --panel: #17202C; --fg: #E6ECF3; --muted: #93A1B2; --line: #3E4B5C;
+  --code: #79A7F0; --code-tint: #1A2B45; --model: #C39BEA; --model-tint: #2A2038; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0F1620; --panel: #17202C; --fg: #E6ECF3; --muted: #93A1B2; --line: #3E4B5C;
+  --code: #79A7F0; --code-tint: #1A2B45; --model: #C39BEA; --model-tint: #2A2038; color-scheme: dark }
+
+body { background: var(--bg); color: var(--fg); font: 16px/1.5 var(--body); }
+main { max-width: 1240px; margin: 0 auto; padding-block: 40px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 48px; }
+header { display: grid; gap: 8px; }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+h1 { font: 700 clamp(28px, 4vw, 42px)/1.1 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 700 22px/1.2 var(--display); margin: 0; text-wrap: balance; }
+.lede { margin: 0; max-width: 65ch; color: var(--muted); font-size: 18px; }
+.lede strong { color: var(--fg); font-weight: 500; }
+section { display: grid; gap: 16px; }
+figure { margin: 0; display: grid; gap: 12px; }
+.canvas { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 16px; }
+svg { display: block; width: 100%; min-width: 760px; height: auto; color: var(--fg); }
+figcaption { color: var(--muted); max-width: 75ch; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 24px; font: 13px/1.4 var(--mono); color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 8px; }
+.sw { width: 22px; height: 14px; border: 1.5px solid var(--fg); border-radius: 3px; background: var(--panel); }
+.sw.ext { border-style: dashed; border-color: var(--muted); }
+.sw.code { border-color: var(--code); background: var(--code-tint); }
+.sw.model { border-color: var(--model); background: var(--model-tint); }
+
+/* SVG parts, styled from the page so they follow the theme */
+.b rect { fill: var(--panel); stroke: currentColor; stroke-width: 1.5; }
+.b.ext rect { stroke: var(--muted); stroke-dasharray: 5 4; }
+.b.code rect { fill: var(--code-tint); stroke: var(--code); stroke-width: 2; }
+.b.model rect { fill: var(--model-tint); stroke: var(--model); stroke-width: 1.5; }
+.t { font: 600 15px var(--display); fill: currentColor; }
+.s { font: 12px var(--mono); fill: var(--muted); }
+.r { font: 13px var(--mono); fill: currentColor; }
+.a { stroke: currentColor; stroke-width: 1.4; fill: none; }
+.lbl { font: 11.5px var(--mono); fill: var(--muted); }
+.code-t { fill: var(--code); }
+
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 500 12px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+td code, li code { font: 13px var(--mono); }
+.facts { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.facts li { display: grid; grid-template-columns: 11ch 1fr; gap: 12px; align-items: baseline; }
+.facts b { font: 500 15px var(--mono); color: var(--code); font-variant-numeric: tabular-nums; }
+</style>
+
+<main>
+  <header>
+    <div class="eyebrow">Grupo Sazón · delivery driver screening</div>
+    <h1>How the screening agent is built</h1>
+    <p class="lede"><strong>The models read and write language. Code makes every decision.</strong> One screening graph serves both voice and WhatsApp, and no model can reject a candidate on its own.</p>
+  </header>
+
+  <section>
+    <h2>1 · The path of one call</h2>
+    <figure>
+      <div class="canvas">
+        <svg viewBox="0 0 1200 600" role="img" aria-label="A recruiter's call request goes through Supabase to a call worker, which dials the candidate through LiveKit and Zadarma. The voice agent sends each turn to the screening graph, which saves state per phone number. After the hang-up the worker writes the result back to Supabase and the board updates.">
+          <defs>
+            <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" fill="currentColor"/>
+            </marker>
+          </defs>
+
+          <!-- boxes -->
+          <g class="b"><rect x="40" y="40" width="200" height="64" rx="5"/><text class="t" x="56" y="68">Recruiter app</text><text class="s" x="56" y="90">React · Vercel</text></g>
+          <g class="b ext"><rect x="330" y="40" width="200" height="64" rx="5"/><text class="t" x="346" y="68">Supabase</text><text class="s" x="346" y="90">Postgres · Realtime · Auth</text></g>
+          <g class="b"><rect x="620" y="40" width="200" height="64" rx="5"/><text class="t" x="636" y="68">Call worker</text><text class="s" x="636" y="90">allowlist · retries</text></g>
+          <g class="b ext"><rect x="620" y="220" width="200" height="64" rx="5"/><text class="t" x="636" y="248">LiveKit + SIP</text><text class="s" x="636" y="270">self-hosted · Docker</text></g>
+          <g class="b ext"><rect x="880" y="220" width="130" height="64" rx="5"/><text class="t" x="896" y="248">Zadarma</text><text class="s" x="896" y="270">SIP trunk</text></g>
+          <g class="b ext"><rect x="1060" y="220" width="120" height="64" rx="5"/><text class="t" x="1076" y="248">Candidate</text><text class="s" x="1076" y="270">phone</text></g>
+          <g class="b"><rect x="620" y="400" width="200" height="64" rx="5"/><text class="t" x="636" y="428">Voice agent</text><text class="s" x="636" y="450">VAD · Deepgram · Cartesia</text></g>
+          <g class="b code"><rect x="330" y="400" width="200" height="64" rx="5"/><text class="t code-t" x="346" y="428">Screening graph</text><text class="s" x="346" y="450">LangGraph · rules.py</text></g>
+          <g class="b ext"><rect x="40" y="400" width="200" height="64" rx="5"/><text class="t" x="56" y="428">Conversation store</text><text class="s" x="56" y="450">SQLite · key = phone</text></g>
+          <g class="b ext"><rect x="330" y="530" width="200" height="54" rx="5"/><text class="t" x="346" y="554">WhatsApp</text><text class="s" x="346" y="574">Twilio webhook</text></g>
+
+          <!-- control plane -->
+          <line class="a" x1="240" y1="62" x2="328" y2="62" marker-end="url(#ar)"/><text class="lbl" x="284" y="54" text-anchor="middle">call request</text>
+          <line class="a" x1="330" y1="86" x2="242" y2="86" marker-end="url(#ar)"/><text class="lbl" x="284" y="102" text-anchor="middle">realtime</text>
+          <line class="a" x1="530" y1="62" x2="618" y2="62" marker-end="url(#ar)"/><text class="lbl" x="574" y="54" text-anchor="middle">polls 2 s</text>
+          <line class="a" x1="620" y1="86" x2="532" y2="86" marker-end="url(#ar)"/><text class="lbl" x="574" y="102" text-anchor="middle">result</text>
+
+          <!-- telephony -->
+          <line class="a" x1="720" y1="104" x2="720" y2="218" marker-end="url(#ar)"/><text class="lbl" x="730" y="165">start_call()</text>
+          <line class="a" x1="822" y1="252" x2="878" y2="252" marker-start="url(#ar)" marker-end="url(#ar)"/><text class="lbl" x="850" y="244" text-anchor="middle">SIP</text>
+          <line class="a" x1="1012" y1="252" x2="1058" y2="252" marker-start="url(#ar)" marker-end="url(#ar)"/><text class="lbl" x="1035" y="244" text-anchor="middle">PSTN</text>
+          <line class="a" x1="720" y1="286" x2="720" y2="398" marker-start="url(#ar)" marker-end="url(#ar)"/><text class="lbl" x="730" y="345">audio</text>
+
+          <!-- brain -->
+          <line class="a" x1="620" y1="422" x2="532" y2="422" marker-end="url(#ar)"/><text class="lbl" x="574" y="414" text-anchor="middle">turn text</text>
+          <line class="a" x1="530" y1="446" x2="618" y2="446" marker-end="url(#ar)"/><text class="lbl" x="574" y="462" text-anchor="middle">reply</text>
+          <line class="a" x1="330" y1="432" x2="242" y2="432" marker-end="url(#ar)"/><text class="lbl" x="286" y="424" text-anchor="middle">checkpoint</text>
+          <line class="a" x1="430" y1="530" x2="430" y2="466" marker-end="url(#ar)"/><text class="lbl" x="440" y="503">same graph</text>
+
+          <!-- result back to the worker -->
+          <polyline class="a" points="140,400 140,165 680,165 680,106" marker-end="url(#ar)"/><text class="lbl" x="150" y="157">read after hang-up</text>
+        </svg>
+      </div>
+      <div class="legend">
+        <span><i class="sw"></i>written for this project</span>
+        <span><i class="sw ext"></i>reused service or library</span>
+        <span><i class="sw code"></i>where the decisions live</span>
+      </div>
+      <figcaption>The laptop exposes nothing to the internet: the worker pulls call requests from Supabase and pushes results back. The voice agent is a thin adapter and has no screening logic, so voice and WhatsApp run the same rules.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>2 · Inside one candidate turn</h2>
+    <figure>
+      <div class="canvas">
+        <svg viewBox="0 0 1200 380" role="img" aria-label="Each candidate turn goes to Jev for choice fields and to Claude for free-text fields. Both feed rules.py, which applies confidence thresholds and knockout rules and produces one next step. Claude then only phrases that step.">
+          <defs>
+            <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" fill="currentColor"/>
+            </marker>
+          </defs>
+
+          <g class="b"><rect x="30" y="158" width="150" height="64" rx="5"/><text class="t" x="46" y="186">Candidate turn</text><text class="s" x="46" y="208">text from STT</text></g>
+          <g class="b model"><rect x="250" y="60" width="220" height="64" rx="5"/><text class="t" x="266" y="88">Jev classifier</text><text class="s" x="266" y="110">license · availability · shift</text></g>
+          <g class="b model"><rect x="250" y="256" width="220" height="64" rx="5"/><text class="t" x="266" y="284">Claude · record_details</text><text class="s" x="266" y="306">name · place · years · date</text></g>
+          <g class="b code"><rect x="600" y="130" width="240" height="120" rx="5"/>
+            <text class="t code-t" x="720" y="195" text-anchor="middle">rules.py decides</text>
+          </g>
+          <g class="b"><rect x="890" y="158" width="130" height="64" rx="5"/><text class="t" x="906" y="186">next_step</text><text class="s" x="906" y="208">one instruction</text></g>
+          <g class="b model"><rect x="1050" y="158" width="130" height="64" rx="5"/><text class="t" x="1066" y="186">Claude</text><text class="s" x="1066" y="208">phrases it</text></g>
+
+          <polyline class="a" points="180,180 215,180 215,92 248,92" marker-end="url(#ar2)"/>
+          <polyline class="a" points="180,200 215,200 215,288 248,288" marker-end="url(#ar2)"/>
+          <text class="lbl" x="222" y="140">choices</text>
+          <text class="lbl" x="222" y="250">free text</text>
+          <polyline class="a" points="470,92 535,92 535,150 598,150" marker-end="url(#ar2)"/><text class="lbl" x="480" y="82">value + calibrated p</text>
+          <polyline class="a" points="470,288 535,288 535,230 598,230" marker-end="url(#ar2)"/><text class="lbl" x="480" y="306">geocoded · dated</text>
+          <line class="a" x1="840" y1="190" x2="888" y2="190" marker-end="url(#ar2)"/>
+          <line class="a" x1="1020" y1="190" x2="1048" y2="190" marker-end="url(#ar2)"/>
+          <text class="lbl" x="1115" y="250" text-anchor="middle">≤ 20 words</text>
+        </svg>
+      </div>
+      <div class="legend">
+        <span><i class="sw model"></i>a model reads or writes language</span>
+        <span><i class="sw code"></i>deterministic code decides</span>
+      </div>
+      <figcaption>Jev also flags conversation signals in the same call: language, a question for the FAQ, wanting a human, wanting to leave, frustration and prompt injection. Claude never sees a confidence score, a distance or a rule, so it can't leak them or overrule them.</figcaption>
+    </figure>
+  </section>
+
+  <section class="grid2">
+    <div style="display:grid;gap:12px;min-width:0">
+      <h2>Outcome → recruiter board</h2>
+      <table>
+        <thead><tr><th>Screening status</th><th>Board column</th></tr></thead>
+        <tbody>
+          <tr><td><code>qualified</code></td><td>Accepted</td></tr>
+          <tr><td><code>needs_review</code></td><td>In revision, with the flagged fields</td></tr>
+          <tr><td><code>disqualified</code> · <code>declined</code></td><td>Rejected, with the reason; a recruiter can override</td></tr>
+          <tr><td><code>abandoned</code> · no answer</td><td>Back to Queue, with a retry tag</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="display:grid;gap:12px;min-width:0">
+      <h2>Numbers in config</h2>
+      <ul class="facts">
+        <li><b>0.3–1.2 s</b><span>end-of-turn wait before the agent replies</span></li>
+        <li><b>0.5 s</b><span>then a filler ("Vale…") so silence never sounds like a dropped call</span></li>
+        <li><b>0.6 / 0.9</b><span>confidence to keep an answer / to act on a knockout</span></li>
+        <li><b>15 / 20 km</b><span>in area / recruiter review, from the nearest of 45 restaurants</span></li>
+        <li><b>80</b><span>pytest test functions, plus 5 web test files</span></li>
+      </ul>
+    </div>
+  </section>
+</main>
